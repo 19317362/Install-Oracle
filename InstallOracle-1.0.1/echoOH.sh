@@ -1,0 +1,1 @@
+echo "$ORACLE_HOME"
