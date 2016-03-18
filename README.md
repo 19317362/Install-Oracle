@@ -13,15 +13,18 @@ This tool can deploy up to 12 environments in parallel. Thus, depending on the s
 It is strongly suggested to perform the OS setting using RSFO available at https://github.com/yannallandit/rsfo
 The Oracle distribution need to be presented via nfs.
 The NFS configuration should be done this way:
+
 1. On the NFS server:
    * # more /etc/exports
      /kits   *(async,no_root_squash)
    * # systemctl restart nfs-config
    * # systemctl restart nfs
+
 2. The Oracle installation files need to be in a directory called /kits/oradb/
    * # ls /kits/oradb/
      install  response  rpm  runInstaller  sshsetup  stage  welcome.html
-3. On the client where Oracl will be installed:
+
+3. On the client where Oracle will be installed:
    * # mkdir /kits
    * # mount -t nfs rsfodev:/kits /kits
 
