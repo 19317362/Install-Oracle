@@ -24,15 +24,15 @@ The NFS configuration should be done this way:
    * # ls /kits/oradb/
      install  response  rpm  runInstaller  sshsetup  stage  welcome.html
 
-3. On the client where Oracle will be installed:
+3. On all the clients where Oracle will be installed:
    * # mkdir /kits
-   * # mount -t nfs rsfodev:/kits /kits
+   * # mount -t nfs NFS_Server:/kits /kits
 
 ### How to use Install Oracle
 
-1. Download the latest rpm from the Github page https://github.com/yannallandit/rsfo 
-2. Install the rpm: yum install –y InstallOracle-1.0.1-1.el7.noarch.rpm
-3. Go to the location directory: # cd /opt/hpe/rsfo/
+1. Download the latest rpm from the Github page https://github.com/yannallandit/Install-Oracle
+2. Install the rpm: yum install –y InstallOracle-1.0.2-1.el7.noarch.rpm
+3. Go to the location directory: # cd /opt/hpe/InstallOracle/
 4. Run the script: # ./DeployOracle.sh
 	* Provides the list of nodes where Oracle will be installed
 
