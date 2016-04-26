@@ -10,6 +10,7 @@
 #  16/03/02  Yann Allandit     Creation for 12c on RHEL/CentOS 7.x
 #  16/04/06  Yann Allandit     Add support for RHEL 6.x
 #  16/04/06  Yann Allandit     Add flexible $OB and $OH managment
+#  26/04/06  Yann Allandit     Fix end of script issue 
 ###############################################################################
 #!/bin/bash
 
@@ -399,6 +400,8 @@ do
   eval show_name=\$$show_name
   ssh ${show_name} /tmp/scripts/InstO.sh $dbcreation ${nfsdir} &
 done
+
+wait
 
 exit 0
 
