@@ -48,3 +48,4 @@ The NFS configuration should be done this way:
 - Flexible location of the $OH and $OB
 - Check the existance of the oracle user
 - A video tutorial "how to use InstallOracle"
+- End of script bug fix
