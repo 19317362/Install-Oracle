@@ -36,6 +36,13 @@ The NFS configuration should be done this way:
 4. Run the script: # ./DeployOracle.sh
 	* Provides the list of nodes where Oracle will be installed
 
+### What's new with the V 1.0.3
+
+- Silent installation mode. Check /opt/hpe/InstallOracle/README.txt for setting details
+- Silent mode require the usage of RSFO before
+- Fix in checking Oracle user existence
+- Fix in remote installation process
+
 ### What's new with the V 1.0.2
 
 - Flexible location of the $OH and $OB

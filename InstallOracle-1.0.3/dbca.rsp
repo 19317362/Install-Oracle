@@ -1058,7 +1058,7 @@ GDBNAME = "orcl12.us.oracle.com"
 # Default value : None
 # Mandatory     : Yes
 #-----------------------------------------------------------------------------
-DB_UNIQUE_NAME = "orcl12c.us.oracle.com"
+DB_UNIQUE_NAME = "HPEDB"
 
 #-----------------------------------------------------------------------------
 # Name          : INSTANCENAME
@@ -1134,7 +1134,7 @@ SYSDBAUSERNAME = "sys"
 # Default value : None
 # Mandatory     : Yes
 #-----------------------------------------------------------------------------
-DB_UNIQUE_NAME = "orcl12c.us.oracle.com"
+DB_UNIQUE_NAME = "HPEDB"
 
 #-----------------------------------------------------------------------------
 # Name          : INSTANCENAME
@@ -1144,7 +1144,7 @@ DB_UNIQUE_NAME = "orcl12c.us.oracle.com"
 # Default value : None
 # Mandatory     : Yes
 #-----------------------------------------------------------------------------
-INSTANCENAME = "orcl12c"
+INSTANCENAME = "HPEDB"
 
 #-----------------------------------------------------------------------------
 # Name          : NODENAME

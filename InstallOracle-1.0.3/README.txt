@@ -9,8 +9,8 @@ HPE Install Oracle -
 
 Object:
 --------
-This package goal is to provide a set of scripts to install Oracle 12c Single Instance on a REDHAT 7 environment. 
-It does use the silent isntall mode in order to create the ORACLE_HOME and to create a database.
+This package goal is to provide a set of scripts to install Oracle 12c Single Instance on a REDHAT 6 or 7 environment. 
+It does use the silent install mode in order to create the ORACLE_HOME and to create a database.
 
 Restriction:
 ------------
@@ -18,7 +18,8 @@ These scripts were tested for the deployment of multiple single instances (up to
 
 Installation procedure:
 -----------------------
-1/ rsfo need to be run before running this package. rsfo takes care of the system prerequisites. For more information about rsfo, please contact yann.allandit@hpe.com
+1/ rsfo need to be run before running this package. rsfo takes care of the system prerequisites. For more information about rsfo, please visit:
+https://github.com/yannallandit/rsfo
 
 2/ ssh need to be enabled between all nodes including the local. If rsfo was used, this is already done
 
@@ -29,14 +30,25 @@ The NFS configuration should be done this way:
    /kits   *(async,no_root_squash)
    # systemctl restart nfs-config
    # systemctl restart nfs
-3.2/ The Oracle installation files need to be in a directory called /kits/oradb/
+3.2/ The Oracle installation files need to be located in a NFS directory. Or instance /kits/oradb/
    # ls /kits/oradb/
    install  response  rpm  runInstaller  sshsetup  stage  welcome.html
-3.3/ On the client where Oracl will be installed:
+3.3/ On all the clients where Oracle will be installed:
    # mkdir /kits
    # mount -t nfs rsfodev:/kits /kits
 
 4/ Run ./DeployOracle.sh
+
+Silent installation:
+--------------------
+In order to perform an installation without user interaction, you need, before s
+tarting the procedure to setup the configuration files as describe below:
+1/ Copy the rsfoparam.txt & the nod_list.txt files in /tmp/scripts/
+
+2/ update the nod_list.txt by adding the list of nodes where rsfo will run. Incl
+ude the nodes name reachable by ssh without password.
+
+3/ Update the rsfoparam.txt with the accurate parameters.
 
 Scripts:
 --------
