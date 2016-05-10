@@ -10,9 +10,13 @@
 #  16/03/02  Yann Allandit     Creation for 12c on RHEL/CentOS 7.x
 #  16/04/06  Yann Allandit     Add support for RHEL 6.x
 #  16/04/06  Yann Allandit     Add flexible $OB and $OH managment
+<<<<<<< HEAD:InstallOracle-1.0.3/DeployOracle.sh
 #  16/04/06  Yann Allandit     Fix end of script issue 
 #  16/05/10  Yann Allandit     Add silent installation mode
 #  16/05/10  Yann Allandit     Fix remote Oracle user existence limitation
+=======
+#  26/04/06  Yann Allandit     Fix end of script issue 
+>>>>>>> 45119ab47675d84af969cc7b317f800a2953ba11:InstallOracle-1.0.2/DeployOracle.sh
 ###############################################################################
 #!/bin/bash
 
@@ -470,6 +474,7 @@ done
 
 wait
 
+<<<<<<< HEAD:InstallOracle-1.0.3/DeployOracle.sh
 
 ###############################################################
 # deactivate silent installation flag
@@ -481,6 +486,8 @@ then
 fi
 
 
+=======
+>>>>>>> 45119ab47675d84af969cc7b317f800a2953ba11:InstallOracle-1.0.2/DeployOracle.sh
 exit 0
 
 
